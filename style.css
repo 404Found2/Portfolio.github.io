@@ -1,0 +1,239 @@
+:root {
+    --cream: rgb(255, 245, 224);
+    --light-red: rgb(255, 105, 105);
+    --dark-red: rgb(187, 37, 37);
+    --blue: rgb(20, 30, 70);
+    --dark-gray: RGB(51, 51, 51);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--cream);
+    text-decoration: none;
+}
+
+/*Nav bar styling*/
+nav,
+nav a {
+    background-color: var(--light-red);
+    color: var(--cream);
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: right;
+    font-family: 'Nanum Gothic Coding', sans-serif;
+
+}
+
+nav a {
+    padding: 10px 25px;
+    align-items: center;
+    height: 50px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+
+}
+
+nav a:hover {
+    background: var(--dark-gray);
+    transition-duration: 0.5s;
+}
+
+@media (max-width: 720px) {
+
+    nav,
+    nav a {
+        display: block;
+        width: 100vw;
+        align-items: center;
+        height: 20px;
+        top: 0px;
+    }
+
+    section:first-of-type {
+        padding: 10px;
+        margin-top: 100px;
+        height: calc(100vh - 100px)
+    }
+
+    .project h1,
+    .project img,
+    .project {
+        width: 80vw;
+        min-width: 150px;
+        max-width: 500px;
+        margin: 0;
+    }
+}
+
+/*Nav bar styling end*/
+section {
+    padding-top: 70px;
+    overflow-x: hidden !important;
+}
+
+
+
+/*MAIN INTRO STYLES*/
+#welcome-section {
+    background: var(--blue);
+    height: calc(100vh);
+    color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+#welcome-section h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+
+}
+
+#welcome-section h3 {
+    font-family: monospace;
+}
+
+/*MAIN FEATURE CODE*/
+#main-feature.project {
+    width: 990px !important;
+    max-width: 95vw;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+#main-feature.project #main-feature-text ul {
+    list-style-position: inside;
+}
+
+#main-feature.project #main-feature-text {
+    font-size: 24px;
+}
+
+/*PROJECTS CODE*/
+#projects {
+    background: var(--dark-red);
+    color: var(--cream);
+    padding-bottom: 10px;
+}
+
+#projects h1 {
+    font-family: sans-serif;
+    TEXT-ALIGN: CENTER;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.05s;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 1500px;
+}
+
+.flex .project h5 {
+    background: var(--dark-gray);
+    padding: 10px;
+    margin-top: -10px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.project img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.flex .project {
+    width: 450px;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.5s;
+}
+
+.project:hover,
+.project:active {
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--light-red);
+}
+
+/*CONTACTS STYLES*/
+#profile-link {
+    background: var(--dark-gray);
+    color: var(--cream);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#profile-link .header {
+    margin: auto;
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    width: 100vw;
+}
+
+.contact h1 {
+    font-size: 24px;
+    font-family: monospace;
+    width: 100%;
+    color: var(--cream);
+
+}
+
+.fa {
+    margin: auto;
+    font-size: 28px;
+}
+
+.fa-paper-plane {
+    font-size: 24px;
+}
+
+.contact {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.contact a:hover {
+    color: var(--light-red);
+    transition-duration: 0.25s;
+}
+
+.contact a {
+    transition-duration: 0.25s;
+}
+
+.contact .text {
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: normal;
+}
